@@ -1,0 +1,669 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family:sans-serif
+}
+
+html {
+    background-color: rgb(253, 253, 253);
+}
+
+a {
+    text-decoration: none;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+.bn {
+    background-color: rgb(8, 1, 19);
+    font-size: .6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5pc 4pc .5pc 4pc;
+}
+
+.lc {
+    display: flex;
+    gap: 1pc;
+    align-items: center;
+    color: white;
+    font-weight: lighter;
+}
+.ltn-name, .phn-num {
+letter-spacing: .1pc;
+}
+
+.ltn, .phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5pc;
+}
+.cn {
+    display: flex;
+    gap: 1pc;
+    align-items: center;
+}
+
+.el-nv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+
+.x-title {
+    font-size: 2rem;
+    font-weight: lighter;
+    color: black;
+}
+
+.el-lnks {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    padding: .5pc;
+}
+
+.el_ln {
+    color: black;
+    text-decoration: none;
+}
+
+/* hide side panel */
+#sidepanel, .opennav {
+    display: none;
+}
+.sel {
+    color: #000;
+}
+
+.src-bx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #444;
+    padding: 1pc;
+    height: 2.5pc;
+}
+
+.src-bx:hover {
+    background-color: #222;
+
+}
+
+#el-bk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1pc;
+    background-color: #222;
+    color: #fff;
+    border: .1pc solid blue;
+    height: 2.5pc;
+
+}
+
+#el-bk:hover {
+    color: rgb(255, 192, 203);
+    border: .1pc solid rgba(12, 7, 8, 0.719);
+}
+
+
+.el-hd {
+    margin: 5pc auto;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    justify-items: center;
+    gap: 1pc;
+    padding: 1pc;
+}
+
+
+
+.el-intro {
+    padding: 1pc;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: column;
+    gap: 1pc;
+}
+
+.el-sec-tl {
+    font-size: .9rem;
+}
+.el_main_tl {
+    font-size: 3rem;
+}
+
+.pink {
+    color: rgb(248, 112, 134);
+}
+
+#el-rd-mr {
+    height: 2.5pc;
+    width: 10pc;
+    color: white;
+    background-color: rgb(12, 1, 3);
+    border: none;
+}
+
+#el-rd-mr:hover {
+    background-color: rgba(46, 31, 33, 0.733);
+
+}
+
+
+
+
+#el-intro-img {
+    height: 20pc;
+    width: 30pc;
+    border-radius: 80%;
+}
+
+.el-sv-well {
+    background-color: #eee;
+    padding: 1pc;
+}
+.el-sv-st {
+    margin: 2pc auto;
+    width: 90%;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1pc;
+    align-content: center;
+    padding: 1pc;
+}
+
+.el-sv-img-bx {
+    padding: .5pc;
+}
+.el-sv-img {
+    height: 20pc;
+    width: 30pc;
+    border-radius: 70%;
+}
+
+
+.el-sv-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1pc;
+}
+
+.el-sv-info-tx {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    gap: .5pc;
+}
+
+
+
+.el-sv-sc-tl {
+    font-size: .7rem;
+    text-align: center;
+}
+
+
+.el-sv-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10pc;
+    align-content: center;
+    justify-items: space-around;
+    width: 100%;
+}
+
+.el-sv-bx {
+    padding: .5pc;
+    display: flex;
+    flex-flow: column;
+    align-items: center;text-align: center;
+    justify-content: center;
+    gap: 1pc;
+}
+
+.el-sv-bx-p {
+    color: #555;
+}
+
+.el-svg {
+    border-radius: 100%;
+}
+
+
+.el-sv-rd-mr {
+    padding: .8pc;
+    background-color: transparent;
+    color: pink;
+    border: .1pc solid pink;
+}
+
+
+.el-sv-serve {
+    background-color: #fff;
+    padding: 1pc;
+
+}
+
+.el-sv-sc {
+    margin: 2pc auto;
+    width: 90%;
+    display: flex;
+    flex-flow: column;
+    gap: .5pc;
+    text-align: center;
+    padding: 1pc;
+}
+
+.sv-sec {
+    font-size: .7rem;
+}
+
+
+.el-serve-tx {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+    align-items: center;
+    width: 60%;
+}
+.el-sv-sc-bxs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 20pc;
+    gap: 1pc;
+    padding: .5pc;
+
+}
+
+.el-sv-sc-bx {
+    background-color: #fff;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1pc;
+    text-align: center;
+    padding: .5pc;
+    box-shadow: 0 .6rem .6rem #eee;
+}
+
+
+.img-sv {
+    height: 8pc;
+    width: 8pc;
+    border-radius: 100%;
+}
+
+
+/* theme 1 footer */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .5s ease;
+}
+
+.foo {
+    background-color: #000;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1pc;
+    padding: 1pc;
+}
+
+.text-lw {
+    color: #eee !important;
+
+}
+
+.theme1-link {
+    text-decoration: none;
+}
+
+.foo-theme-title {
+    display: flex;
+    align-items: center;
+}
+.foo-t-t {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.foo-central {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 1pc;
+    width: 80%;
+}
+
+/* there are 2 items currently - if more are added, consider revising box layout */
+.foo-bx {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 1pc;
+    padding: .5pc;
+}
+
+.foo-c-lks {
+    display: flex;
+    flex-flow: column;
+    gap: .5pc;
+    align-items: flex-start;
+}
+
+.foo-c-title {
+    font-weight: 800;
+    font-size: large;
+}
+
+
+.foo-c-lk {
+    display: block;
+    color: #999;
+}
+
+.foo-c-lk:hover {
+    color: #eee;
+}
+
+.foo-social {
+    display: flex;
+    flex-flow: column;
+    gap: 1pc;
+}
+
+.fs-bx {
+    display: flex;
+    flex-flow: column;
+    gap: .5pc;
+}
+.foo-s-lks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.foo-c-s {
+    border: .1pc solid #888;
+    border-radius: .3pc;
+    padding: .5pc;
+    
+}
+
+.foo-s-locs {
+    display: flex;
+    gap: .3pc;
+    flex-wrap: wrap;
+}
+
+.foo-s-l {
+    font-size: xx-small;
+    padding: .5pc;
+    border-radius: 1pc;
+    background-color: #444;
+    color: #fff;
+}
+
+@media only screen and (max-width: 996px) {
+    .foo-central {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+}
+
+
+
+@media only screen and (max-width:996px) {
+    .el-lnks {
+        width: 100%;
+    }
+    .el_ln {
+        font-size: .8rem;
+    }
+
+    .el_main_tl {
+        font-size: 2rem;
+    }
+
+    #el-intro-img {
+        height: 15pc;
+        width: 20pc;
+        border-radius: 80%;
+    }
+
+    .el-sv-img {
+        height: 10pc;
+        width: 15pc;
+        border-radius: 70%;
+    }
+
+    .el-svg {
+        height: 4pc;
+        width: 5pc;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    
+    .el-sv-st {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .el-sv-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .el-sv-sc-bxs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    
+    .el-sv-sc-bx {
+        font-size: smaller;
+    }
+    
+    
+    .img-sv {
+        height: 6.5pc;
+        width: 6.5pc;
+        border-radius: 100%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .el-nv {
+        justify-content: space-between;
+        padding: .3pc 1pc;
+    }
+    
+    .el-lnks {
+        display: none;
+    }
+
+    .el_ln {
+        font-size: inherit;
+    }
+
+    #sidepanel {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+        padding-top: 3pc;
+        width: 0;
+        background-color: rgb(90, 59, 64);
+        height: 100%;
+        z-index: 3;
+    }
+
+    .sidepanel a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .sidepanel span {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+    .sidepanel a:hover {
+        color: #888;
+    }
+
+    .sidepanel span:hover {
+        color: #888;
+    }
+
+    .sp-margin {
+        margin: 1pc .8pc 1pc 3.2pc;
+    }
+
+
+    .closebtn {
+        font-size: 2rem;
+        margin-left: 80%;
+    }
+
+    .opennav {
+        display: inline-block;
+        background-color: #000;
+        font-size: 1.5rem;
+        padding: .5pc .8pc;
+        color: #fff;
+        border: none;
+    }
+
+    .opennav:hover {
+        background-color: #222;
+    }
+
+    #el-bk {
+        background-color: #222;
+        border: none;
+
+    }
+
+    #el-bk:hover {
+        background-color: #000;
+    }
+
+    /* consider using divs for easier and better alignment purposes
+
+    --an element such as span is for inline purposes without great sin=gnificace */
+
+    .src-bx {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5.5pc;
+        background-color: #222;
+    }
+
+    .src-bx:hover {
+        background-color: #000;
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    .bn {
+        background-color: rgb(236, 82, 107);
+        font-size: .6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5pc 1pc .5pc 1pc;
+    }
+    
+    .ltn {
+        display: none;
+    }
+    
+    .el-lnks {
+        display: none;
+    }
+
+    .el-hd {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .el-sv-st {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .el-sv-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+       
+    .el-serve-tx {
+        width: 100%;
+    }
+
+    .el-sv-sc-bxs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    
+    .el-sv-sc-bx {
+        font-size: smaller;
+    }
+    
+    
+    .img-sv {
+        height: 6.5pc;
+        width: 6.5pc;
+        border-radius: 100%;
+    }
+    .foo-central {
+        width: 70%;
+    }
+
+    
+}
+
+@media only screen and (max-width: 375px) {
+    .el-sv-sc {
+        width: 100%;
+    }
+
+    .foo-central {
+        width: 100%;
+    }
+}
